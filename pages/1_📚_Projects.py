@@ -7,6 +7,9 @@ person =  {"name": "Nikoloz",
            "linkedin_url": "https://www.linkedin.com/in/nikolozshubladze/",
            "github_url": "https://github.com/elnika1"}
 
+video_file = open("video/CRE.webm", 'rb')
+video_bytes = video_file.read()
+
 def main():
     st.sidebar.markdown(f'<img src="{person["picture_url"]}" alt="{person["name"]} {person["surname"]}" style="width: 200px; height: 200px; border-radius: 50%;">', unsafe_allow_html=True)
     st.sidebar.markdown(f"<h2>{person['name']} {person['surname']}</h2>", unsafe_allow_html=True)
@@ -15,14 +18,12 @@ def main():
     st.sidebar.markdown(f'<p><a href="{person["github_url"]}" target="_blank">GitHub</a></p>', unsafe_allow_html=True)
 
     # Projects Section
-    st.header("Projects")
     st.subheader("Car-recommendation-engine")
     st.write("""
-    Description: Select a car model, and the car recommendation engine will calculate its depreciation for the next year.
+    **Description**: Select a car model, and the car recommendation engine will calculate its depreciation for the next year.
     Additionally, it will display similar cars along with their depreciation rates, allowing you to choose the one with the least depreciation.
     """)
-    video_file = open("video/CRE.webm", 'rb')
-    video_bytes = video_file.read()
+    st.write("**Website**: https://car-recommendation-engine-v2.streamlit.app/")
 
     st.video(video_bytes)
 
