@@ -8,29 +8,20 @@ person =  {"name": "Nikoloz",
            "github_url": "https://github.com/elnika1"}
 
 def main():
+
     st.sidebar.markdown(f'<img src="{person["picture_url"]}" alt="{person["name"]} {person["surname"]}" style="width: 200px; height: 200px; border-radius: 50%;">', unsafe_allow_html=True)
     st.sidebar.markdown(f"<h2>{person['name']} {person['surname']}</h2>", unsafe_allow_html=True)
     st.sidebar.markdown(f'<p> {person["title"]}</p>', unsafe_allow_html=True)
     st.sidebar.markdown(f'<p><a href="{person["linkedin_url"]}" target="_blank">LinkedIn</a></p>', unsafe_allow_html=True)
     st.sidebar.markdown(f'<p><a href="{person["github_url"]}" target="_blank">GitHub</a></p>', unsafe_allow_html=True)
 
-    # Projects Section
-    st.header("Projects")
-    st.subheader("Project 1: [Project Name]")
-    st.write("""
-    Description: [Brief description of your project]
-    [Add images, videos, or links to your project here]
-    """)
-
-    st.subheader("Project 2: [Project Name]")
-    st.write("""
-    Description: [Brief description of your project]
-    [Add images, videos, or links to your project here]
-    """)
-
 
     # Contact Information
     st.header("Contact Information")
-    st.write("Feel free to reach out to me via email at [Your Email Address] or connect with me on [Social Media Platforms].")
+    st.write("Feel free to reach out to me via email at shubnika1@gmail.com")
+
+
+
+
 if __name__ == "__main__":
     main()

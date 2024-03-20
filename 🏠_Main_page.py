@@ -19,7 +19,7 @@ def main():
 
 
     st.title("Welcome to My Portfolio Page")
-    st.write("This is a streaming webpage about myself, showcasing my description and projects.")
+    st.write("This is a webpage about myself, showcasing my description and projects.")
 
     # About Me Section
     st.header("About Me")
