@@ -24,7 +24,6 @@ def main():
     # About Me Section
     st.header("About Me")
     st.write("""
-    My Journey: From Water Polo Champion to Data Science Enthusiast
 
     I am Nikoloz Shubladze, and my journey spans from the competitive waters of professional water polo to the intricate world of data science. For fifteen years, I dedicated myself to mastering the sport, representing Georgia's national team and esteemed clubs like Dinamo Tbilisi on the European stage. The Champions League was my battleground, where I left my mark with stellar performances.
 
