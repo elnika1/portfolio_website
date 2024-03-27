@@ -18,7 +18,7 @@ def main():
 
     # Contact Information
     st.header("Contact Information")
-    st.write("Feel free to reach out to me via email at shubnika1@gmail.com")
+    st.write("Feel free to reach out to me via email at shubnika1@gmail.com ")
 
 
 
